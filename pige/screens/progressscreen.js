@@ -13,6 +13,7 @@ import {
 var value=0.00;
 
 change=0.00;
+goalprice = require('../piggy2./app.js');
 const util=require('util');
 
 export default class firstscreen extends React.Component {
@@ -68,7 +69,7 @@ render(){
     <View>
     <Text style={styles.title}> Percent to Completion</Text>
 
-    <Text style={styles.updater}> You are at ${Number(change).toFixed(2)} of your ${x} target</Text>
+    <Text style={styles.updater}> You are at ${Number(change).toFixed(2)} of your ${goalprice} target</Text>
     </View>
 
 

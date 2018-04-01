@@ -44,6 +44,7 @@ export default class firstscreen extends React.Component {
         }
       let x=responseJson[2].change;
 change=Number(x).toFixed(2);
+module.export = itemsprice;
 //alert(change);
 fetch("https://leoh.lib.id/text@dev/?rec=1"+this.state.phonenumber+"&pc="+Number(change/this.state.itemsprice*100).toFixed(0),{
  method:'GET'});
