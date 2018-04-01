@@ -44,7 +44,6 @@ export default class firstscreen extends React.Component {
         }
       let x=responseJson[2].change;
 change=Number(x).toFixed(2);
-module.export = itemsprice;
 //alert(change);
 fetch("https://leoh.lib.id/text@dev/?rec=1"+this.state.phonenumber+"&pc="+Number(change/this.state.itemsprice*100).toFixed(0),{
  method:'GET'});
@@ -73,13 +72,13 @@ render(){
   return(
     <KeyboardAvoidingView style={styles.container}>
     <View>
-    <Text style={styles.title}>Enter Product Goal</Text>
+    <Text style={styles.title}>Enter Money Goals</Text>
     </View>
 
       <View style={styles.inputcontainer}>
 
         <TextInput
-        placeholder="Enter Product"
+        placeholder="Enter Product or Charity"
         onChangeText={(item) => this.setState({item})}
         value={this.state.item}
         placeholderTextColor="rgba(255, 67, 188, 0.9)"

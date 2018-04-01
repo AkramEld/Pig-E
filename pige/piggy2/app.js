@@ -7,7 +7,7 @@ const roundTo = require('round-to');
 
 mongoose.connect('mongodb://piggydata:1234@ds231229.mlab.com:31229/piggy');
 
-goalprice = require('../screens./newgoal.js');
+goalprice = require('../screens/newgoal.js');
 module.exports = goalprice;
 
 const accountID = '5abf37cb322fa06b677937d4';
